@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ch2MyAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fm-x5-2ag">
+                                <rect key="frame" x="137.66666666666666" y="685" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Jju-CD-hxv"/>
+                                    <constraint firstAttribute="height" constant="50" id="yVJ-dN-mV8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <state key="normal" title="Refresh">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HkS-0I-xoL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXy-vf-xks">
+                                <rect key="frame" x="121" y="114" width="133" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="133" id="8zS-z7-uAA"/>
+                                    <constraint firstAttribute="height" constant="40" id="L6W-zN-IlW"/>
+                                    <constraint firstAttribute="width" constant="133" id="hRo-Zc-pD5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="35"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="Shn-T9-XdS">
+                                <rect key="frame" x="27.666666666666657" y="191" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="4gP-pm-U1a"/>
+                                    <constraint firstAttribute="height" constant="320" id="xwx-mt-iBO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₩1,000,000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6M3-zr-pap">
+                                <rect key="frame" x="98" y="617" width="179" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OXy-vf-xks" secondAttribute="trailing" constant="121" id="5dZ-T9-JC4"/>
+                            <constraint firstItem="OXy-vf-xks" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Aoj-c2-BYc"/>
+                            <constraint firstItem="Shn-T9-XdS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="N3L-pT-FhZ"/>
+                            <constraint firstItem="OXy-vf-xks" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="P8x-el-fVn"/>
+                            <constraint firstItem="5fm-x5-2ag" firstAttribute="top" secondItem="6M3-zr-pap" secondAttribute="bottom" constant="32" id="Ryg-mR-N3s"/>
+                            <constraint firstItem="OXy-vf-xks" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="U7r-Xp-xvZ"/>
+                            <constraint firstItem="Shn-T9-XdS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="147" id="ZV3-L4-ofW"/>
+                            <constraint firstItem="5fm-x5-2ag" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lFs-Ss-Tzn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5fm-x5-2ag" secondAttribute="bottom" constant="43" id="otv-hC-G1N"/>
+                            <constraint firstItem="6M3-zr-pap" firstAttribute="centerX" secondItem="5fm-x5-2ag" secondAttribute="centerX" id="s1k-XS-Dvg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="priceLabel" destination="6M3-zr-pap" id="18f-ht-wzN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="137.4384236453202"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dog" width="1372" height="2024.5"/>
+    </resources>
+</document>
